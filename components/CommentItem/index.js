@@ -5,15 +5,14 @@ import { Text, Image, StarRating } from "../index";
 import PropTypes from "prop-types";
 import styles from "./styles";
 
-export default function CommentItem(props) {
+export default CommentItem = ({ style, image, name, rate, date, title, comment }) => {
     const { colors } = useTheme();
     const cardColor = colors.card;
-    const { style, image, name, rate, date, title, comment } = props;
     return (
         <View style={[styles.contain, { backgroundColor: cardColor }, style]}>
             <View style={{ flexDirection: "row", marginBottom: 10 }}>
                 <View style={styles.contentLeft}>
-                    <Image source={{uri:image}} style={styles.thumb} />
+                    <Image source={{ uri: image }} style={styles.thumb} />
                     <View>
                         <Text headline semibold numberOfLines={1}>
                             {name}

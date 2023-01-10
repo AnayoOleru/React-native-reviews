@@ -1,1 +1,7 @@
-# React-native-reviews
+# React Native Reviews Component
+
+A react native component for Customer or Client Reviews
+
+[Demo](https://youtube.com/shorts/an9Ao6baIBQ?feature=share)
+
+[Run it on your Phone](https://expo.dev/@anayooleru/React-native-reviews?serviceType=classic&distribution=expo-go)

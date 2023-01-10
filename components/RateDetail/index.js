@@ -5,9 +5,8 @@ import { Text, Icon } from "../index";
 import { BaseColor, useTheme } from "../../config";
 import styles from "./styles";
 
-export default function RateDetail(props) {
+export default RateDetail = ({ style, point, maxPoint, totalRating, data }) => {
   const { colors } = useTheme();
-  const { style, point, maxPoint, totalRating, data } = props;
   return (
     <View style={[styles.contain, style]}>
       <View style={styles.contentLeft}>

@@ -5,21 +5,20 @@ import styles from './styles';
 import PropTypes from 'prop-types';
 import { BaseColor, useTheme } from '../../config';
 
-export default function ProfileDetail(props) {
+export default ProfileDetail = ({
+    style,
+    image,
+    styleLeft,
+    styleThumb,
+    styleRight,
+    onPress,
+    textFirst,
+    point,
+    textSecond,
+    textThird,
+    icon,
+}) => {
     const { colors } = useTheme();
-    const {
-        style,
-        image,
-        styleLeft,
-        styleThumb,
-        styleRight,
-        onPress,
-        textFirst,
-        point,
-        textSecond,
-        textThird,
-        icon,
-    } = props;
     return (
         <TouchableOpacity
             style={[styles.contain, style]}
@@ -27,7 +26,7 @@ export default function ProfileDetail(props) {
             activeOpacity={0.9}>
             <View style={[styles.contentLeft, styleLeft]}>
                 <View>
-                    <Image source={{uri: image}} style={[styles.thumb, styleThumb]} />
+                    <Image source={{ uri: image }} style={[styles.thumb, styleThumb]} />
                     <View style={[styles.point, { backgroundColor: colors.primaryLight }]}>
                         <Text overline whiteColor semibold>
                             {point}

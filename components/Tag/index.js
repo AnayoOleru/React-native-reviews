@@ -5,29 +5,28 @@ import PropTypes from 'prop-types';
 import { Text } from '../../components';
 import styles from './styles';
 
-export default function Tag(props) {
+export default Tag = ({
+    style,
+    textStyle,
+    icon,
+    primary,
+    primaryIcon,
+    outline,
+    outlineIcon,
+    outlineSecondary,
+    outlineSecondaryIcon,
+    small,
+    light,
+    gray,
+    chip,
+    status,
+    rate,
+    rateSmall,
+    sale,
+    children,
+    ...rest
+}) => {
     const { colors } = useTheme();
-    const {
-        style,
-        textStyle,
-        icon,
-        primary,
-        primaryIcon,
-        outline,
-        outlineIcon,
-        outlineSecondary,
-        outlineSecondaryIcon,
-        small,
-        light,
-        gray,
-        chip,
-        status,
-        rate,
-        rateSmall,
-        sale,
-        children,
-        ...rest
-    } = props;
 
     return (
         <TouchableOpacity

@@ -1,6 +1,6 @@
 import Review from './index';
 
-export default function App() {
+export default App = () => {
   return (
     <Review />
   );

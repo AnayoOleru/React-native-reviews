@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import Text from "../text";
 import styles from "./styles";
 
-export default function Button(props) {
+export default Button = (props) => {
   const { colors } = useTheme();
   const {
     style,

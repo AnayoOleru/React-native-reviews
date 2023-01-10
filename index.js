@@ -8,11 +8,10 @@ import {
     RateDetail,
     CommentItem,
 } from './components';
-import styles from './styles';
 import { ReviewData } from './data';
 import { useTranslation } from 'react-i18next';
 
-export default function Review() {
+export default Review = () => {
     const { colors } = useTheme();
     const { t } = useTranslation();
 
@@ -20,7 +19,7 @@ export default function Review() {
     const [rateDetail] = useState({
         point: 4.7,
         maxPoint: 5,
-        totalRating: 25,
+        totalRating: 5,
         data: ['5%', '5%', '35%', '40%', '10%'],
     });
     const [reviewList] = useState(ReviewData);
@@ -49,7 +48,7 @@ export default function Review() {
                 onPressLeft={() => { }}
                 onPressRight={() => { }}
             />
-            {/* Sample User Review List */}
+
             <FlatList
                 contentContainerStyle={{ padding: 20 }}
                 refreshControl={

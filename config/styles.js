@@ -1,8 +1,5 @@
 import { StyleSheet } from 'react-native';
 
-/**
- * Common basic style defines
- */
 export const BaseStyle = StyleSheet.create({
     textInput: {
         height: 46,

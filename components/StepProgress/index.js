@@ -5,9 +5,8 @@ import { Text } from "../../components";
 import PropTypes from "prop-types";
 import { useTheme } from "../../config";
 
-export default function StepProgress(props) {
+export default StepProgress = ({ style, onPress, step, title, description }) => {
   const { colors } = useTheme();
-  const { style, onPress, step, title, description } = props;
   return (
     <TouchableOpacity
       style={[styles.contain, { backgroundColor: colors.card }, style]}
@@ -53,5 +52,5 @@ StepProgress.defaultProps = {
   title: "",
   description: "",
   style: {},
-  onPress: () => {}
+  onPress: () => { }
 };

@@ -4,7 +4,7 @@ import { Text } from "../../components";
 import styles from "./styles";
 import PropTypes from "prop-types";
 
-export default function ProfilePerformance(props) {
+export default ProfilePerformance = (props) => {
     const renderValue = (type, value) => {
         switch (type) {
             case "primary":

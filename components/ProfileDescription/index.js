@@ -4,14 +4,13 @@ import { Image, Text } from '../../components';
 import styles from './styles';
 import PropTypes from 'prop-types';
 
-export default function ProfileDescription(props) {
-    const { style, image, styleThumb, onPress, name, subName, description } = props;
+export default ProfileDescription = ({ style, image, styleThumb, onPress, name, subName, description }) => {
     return (
         <TouchableOpacity
             style={[styles.contain, style]}
             onPress={onPress}
             activeOpacity={0.9}>
-            <Image source={{uri: image}} style={[styles.thumb, styleThumb]} />
+            <Image source={{ uri: image }} style={[styles.thumb, styleThumb]} />
             <View style={{ flex: 1, alignItems: 'flex-start' }}>
                 <Text headline semibold numberOfLines={1}>
                     {name}

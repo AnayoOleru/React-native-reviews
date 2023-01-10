@@ -72,33 +72,32 @@ const defaultProps = {
   reversed: false,
   starSize: 40,
   starStyle: {},
-  selectedStar: () => {}
+  selectedStar: () => { }
 };
 
-function StarRating(props) {
+const StarRating = ({
+  activeOpacity,
+  animation,
+  buttonStyle,
+  containerStyle,
+  disabled,
+  emptyStar,
+  emptyStarColor,
+  fullStar,
+  fullStarColor,
+  halfStar,
+  halfStarColor,
+  halfStarEnabled,
+  icoMoonJson,
+  iconSet,
+  maxStars,
+  rating,
+  reversed,
+  starSize,
+  starStyle,
+  selectedStar
+}) => {
   const starRef = [];
-  const {
-    activeOpacity,
-    animation,
-    buttonStyle,
-    containerStyle,
-    disabled,
-    emptyStar,
-    emptyStarColor,
-    fullStar,
-    fullStarColor,
-    halfStar,
-    halfStarColor,
-    halfStarEnabled,
-    icoMoonJson,
-    iconSet,
-    maxStars,
-    rating,
-    reversed,
-    starSize,
-    starStyle,
-    selectedStar
-  } = props;
 
   const onStarButtonPress = rating => {
     selectedStar(rating);

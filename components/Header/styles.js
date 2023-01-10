@@ -1,9 +1,7 @@
-import React from 'react';
-import {StyleSheet, I18nManager} from 'react-native';
-import {BaseStyle} from '../../config';
+import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
-  contain: {height: 45, flexDirection: 'row'},
+  contain: { height: 45, flexDirection: 'row' },
   contentLeft: {
     flex: 1,
     justifyContent: 'center',

@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, Image as FastImage } from "react-native";
 
-export default function Image(props) {
+export default Image = (props) => {
     const { style, resizeMode, ...rest } = props;
     return (
         <FastImage
