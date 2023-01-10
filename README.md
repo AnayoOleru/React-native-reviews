@@ -2,9 +2,11 @@
 
 A react native component for Customer or Client Reviews
 
-![alt text](https://res.cloudinary.com/dvfr0z8wr/image/upload/v1673365046/Simulator_Screen_Shot_-_iPhone_13_Pro_Max_-_2023-01-10_at_15.37.01.png)
 
-![alt text](https://res.cloudinary.com/dvfr0z8wr/image/upload/v1673365046/Simulator_Screen_Shot_-_iPhone_13_Pro_Max_-_2023-01-10_at_15.37.01.png)
+<p align="left">
+  <img src="https://res.cloudinary.com/dvfr0z8wr/image/upload/v1673365046/Simulator_Screen_Shot_-_iPhone_13_Pro_Max_-_2023-01-10_at_15.37.01.png" width="250" title="hover text">
+  <img src="https://res.cloudinary.com/dvfr0z8wr/image/upload/v1673365046/Simulator_Screen_Shot_-_iPhone_13_Pro_Max_-_2023-01-10_at_15.37.01.png" width="250" alt="accessibility text">
+</p>
 
 [Demo](https://youtube.com/shorts/an9Ao6baIBQ?feature=share)
 
